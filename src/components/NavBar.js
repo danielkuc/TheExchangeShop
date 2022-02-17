@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import MainNav from "./MainNav";
 import AuthNav from "./AuthNav";
 
@@ -9,13 +9,13 @@ const NavBar = () => {
       <nav className="navbar navbar-expand-md navbar-dark bg-dark">
         {/* <div className="container"> */}
           {/* <MainNav /> */}
-          <NavLink
+          <Link
       to="/profile"
-      exact="true"
-      className={({ isActive }) => "nav-link" + (isActive ? " router-link-exact-active" : "")}
+      // exact="true"
+      // className={({ isActive }) => "nav-link" + (isActive ? " router-link-exact-active" : "")}
     >
       Profile
-    </NavLink>
+    </Link>
           <AuthNav />
         {/* </div> */}
       </nav>
