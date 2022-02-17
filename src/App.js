@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { NavBar } from './components';
+// import { NavBar } from './components';
+import { NavTest } from './components';
 
 
 
@@ -22,7 +23,8 @@ function App() {
   
   return (
     <div className="App">
-      <NavBar/>
+      {/* <NavBar/> */}
+      <NavTest/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Hello, World!</h1>
