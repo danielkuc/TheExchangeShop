@@ -1,6 +1,6 @@
 import React from "react";
 
-import MainNav from "./MainNav";
+// import MainNav from "./MainNav";
 import AuthNav from "./AuthNav";
 
 const NavBar = () => {
@@ -8,8 +8,7 @@ const NavBar = () => {
     <div className="nav-container">
       <nav className="navbar navbar-expand-md navbar-dark bg-dark">
         <div className="container">
-          <div className="navbar-brand logo" />
-          <MainNav />
+          {/* <MainNav /> */}
           <AuthNav />
         </div>
       </nav>
