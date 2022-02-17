@@ -7,7 +7,7 @@ const NavBar = () => {
   return (
     <div className="nav-container">
       <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-        <div className="container">
+        {/* <div className="container"> */}
           {/* <MainNav /> */}
           <NavLink
       to="/profile"
@@ -17,7 +17,7 @@ const NavBar = () => {
       Profile
     </NavLink>
           <AuthNav />
-        </div>
+        {/* </div> */}
       </nav>
     </div>
   );
