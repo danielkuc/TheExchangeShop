@@ -1,4 +1,6 @@
 import Loading from "./Loading";
 import NavBar from "./NavBar";
+import Admin from './Admin';
+import Profile from './Profile';
 
-export { Loading, NavBar };
+export { Admin, Loading, NavBar, Profile };
