@@ -1,15 +1,11 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
-import { withAuthenticationRequired } from '@auth0/auth0-react';
-import { Loading } from '../components';
+// import { Loading } from '../components';
+import { useAuth0 } from '@auth0/auth0-react';
+import { Navigate } from 'react-router-dom';
 
-const ProtectedRoute = ({ component, ...args }) => (
-  <Route
-    component={withAuthenticationRequired(component, {
-      onRedirecting: () => <Loading />,
-    })}
-    {...args}
-  />
-);
+const ProtectedRoute = ({ children, redirectTo }) => {
+  const { isAuthenticated } = useAuth0();
+  return isAuthenticated ? children : <Navigate to={redirectTo} />;
+};
 
 export default ProtectedRoute;
