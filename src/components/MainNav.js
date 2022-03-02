@@ -1,5 +1,6 @@
-import {NavLink} from "react-router-dom";
+import { NavLink} from "react-router-dom";
 import React from "react";
+import ProtectedLink from "../auth/protected-link";
 
 const MainNav = () => (
   <div className="navbar-nav mr-auto">
@@ -17,14 +18,16 @@ const MainNav = () => (
     >
       Profile
     </NavLink>
-    <NavLink
-      to="/admin"
-      exact="true"
+    {/* <NavLink
+      // to="/"
+      to="https://exchange-dashboard.netlify.app"
+      // exact="true"
       className={({ isActive }) => "nav-link" + (isActive ? " router-link-exact-active" : "")}
-
     >
       Admin
-    </NavLink>
+    </NavLink> */}
+    {/* <a href="https://exchange-dashboard.netlify.app" className="nav-link">Admin</a> */}
+    <ProtectedLink url="https://exchange-dashboard.netlify.app" name="Admin" />
   </div>
 );
 

@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Auth0ProviderWithHistory from './auth/auth0-provider-with-history';
-import { Admin, Profile } from './components';
+import { Profile } from './components';
 import ProtectedRoute from './auth/protected-route';
 
 
@@ -14,7 +14,6 @@ ReactDOM.render(
       <Auth0ProviderWithHistory>
         <Routes>
           <Route path='/' element={<App />}>
-            <Route path="admin" element={<ProtectedRoute component={Admin} />} />
             <Route path="profile" element={<ProtectedRoute component={Profile} />} />
           </Route>
         </Routes>
