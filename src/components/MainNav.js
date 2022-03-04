@@ -18,15 +18,6 @@ const MainNav = () => (
     >
       Profile
     </NavLink>
-    {/* <NavLink
-      // to="/"
-      to="https://exchange-dashboard.netlify.app"
-      // exact="true"
-      className={({ isActive }) => "nav-link" + (isActive ? " router-link-exact-active" : "")}
-    >
-      Admin
-    </NavLink> */}
-    {/* <a href="https://exchange-dashboard.netlify.app" className="nav-link">Admin</a> */}
     <ProtectedLink url="https://exchange-dashboard.netlify.app" name="Admin" />
   </div>
 );
