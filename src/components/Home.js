@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Container, Row } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
+import SearchBar from './SearchBar';
 
 const Home = () => {
 
@@ -17,11 +18,12 @@ const Home = () => {
   },[]);
 
   return (
-    <Container>
+    <div>
+      <SearchBar/>
       <Row>
         <h2>{`Hello from Home and ${message}`}</h2>
       </Row>
-    </Container>
+    </div>
   )
 }
 
