@@ -1,10 +1,9 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { NavBar } from './components';
-import { Outlet } from 'react-router-dom';
-
-
+import { Cart, Home, NavBar, Profile } from './components';
+import { Routes, Route } from 'react-router-dom';
+import ProtectedRoute from './auth/protected-route';
 
 function App() {
   const [message, setMessage] = useState("");
@@ -23,10 +22,16 @@ function App() {
   return (
     <div>
       <NavBar/>
-      <Outlet/>
       <header className="Main">
         <h2>{message}</h2>
       </header>
+
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='cart' element={<Cart />} />
+        <Route path="profile" element={<ProtectedRoute component={Profile} />} />
+      </Routes>
+
     </div>
   );
 }

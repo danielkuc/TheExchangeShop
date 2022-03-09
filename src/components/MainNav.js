@@ -19,6 +19,13 @@ const MainNav = () => (
       Profile
     </NavLink>
     <ProtectedLink url="https://exchange-dashboard.netlify.app" name="Admin" />
+    <NavLink
+      to="/cart"
+      exact="true"
+      className={({ isActive }) => "nav-link" + (isActive ? " router-link-exact-active" : "")}
+    >
+      Cart
+    </NavLink>
   </div>
 );
 

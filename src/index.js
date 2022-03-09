@@ -3,20 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Auth0ProviderWithHistory from './auth/auth0-provider-with-history';
-import { Profile } from './components';
-import ProtectedRoute from './auth/protected-route';
-
 
 ReactDOM.render(
     <BrowserRouter>
       <Auth0ProviderWithHistory>
-        <Routes>
-          <Route path='/' element={<App />}>
-            <Route path="profile" element={<ProtectedRoute component={Profile} />} />
-          </Route>
-        </Routes>
+        <App/>
       </Auth0ProviderWithHistory>
     </BrowserRouter>,
   document.getElementById('root')
