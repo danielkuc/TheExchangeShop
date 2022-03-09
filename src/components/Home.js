@@ -18,7 +18,9 @@ const Home = () => {
   },[]);
 
   return (
-    <div>
+    <div className='text-center'>
+      <p className='h1 my-4'>The Exchange</p>
+      <hr />
       <SearchBar/>
       <Row>
         <h2>{`Hello from Home and ${message}`}</h2>
