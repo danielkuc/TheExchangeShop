@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 import SearchBar from './SearchBar';
 import FeaturedProducts from './FeaturedProducts';
+import { Button, Container } from 'react-bootstrap';
 
 const Home = () => {
 
@@ -15,12 +16,17 @@ const Home = () => {
   },[]);
 
   return (
-    <div className='text-center'>
-      <p className='h1 my-4'>The Exchange</p>
-      <hr />
-      <SearchBar/>
+    <Container className='text-center'>
+      <div className='vh-30'>
+        <p className='h1 my-4'>The Exchange</p>
+        <hr />
+        <SearchBar/>
+      </div>
+      <div className='mb-5'>
+        <Button variant='outline-dark' size='lg' className='shop-now mb-5'>Shop Now</Button>
+      </div>
       <FeaturedProducts/>
-    </div>
+    </Container>
   )
 }
 

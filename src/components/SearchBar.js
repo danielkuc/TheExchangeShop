@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
-import { Col,Form, Row } from 'react-bootstrap'
+import { Col,Form } from 'react-bootstrap'
 
 const SearchBar = () => {
 
   const [inputText, setInputText] = useState("");
 
   return (
-    <Row className='my-5'>
-      <Col md={4} className="m-auto">
+    <div className='my-5'>
+      <Col md={6} className="m-auto">
         <Form onSubmit={(e) =>{
           e.preventDefault()
         }}>
@@ -19,7 +19,7 @@ const SearchBar = () => {
         />
         </Form>
       </Col>
-    </Row>
+    </div>
   )
 }
 
