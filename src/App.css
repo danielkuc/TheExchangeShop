@@ -3,6 +3,14 @@
 }
 
 .shop-now {
-  border-radius: 0% !important;
+  border-style: solid;
+  border-color: black;
+  color:black;
   border-width: medium;
+  text-decoration: none;
+}
+
+.shop-now:hover {
+  text-decoration: none;
+  color: black;
 }

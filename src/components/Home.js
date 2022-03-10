@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import axios from 'axios';
-import SearchBar from './SearchBar';
 import FeaturedProducts from './FeaturedProducts';
-import { Button, Container } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
 
@@ -17,13 +17,12 @@ const Home = () => {
 
   return (
     <Container className='text-center'>
-      <div className='vh-30'>
+      <div className='my-5'>
         <p className='h1 my-4'>The Exchange</p>
         <hr />
-        <SearchBar/>
       </div>
       <div className='mb-5'>
-        <Button variant='outline-dark' size='lg' className='shop-now mb-5'>Shop Now</Button>
+        <Link to="products" className='shop-now p-3'>Shop Now</Link>
       </div>
       <FeaturedProducts/>
     </Container>
