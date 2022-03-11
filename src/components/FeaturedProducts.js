@@ -10,6 +10,7 @@ const FeaturedProducts = () => {
         <Product/>
         <Product/>
         <Product/>
+        <Product/>
       </Row>
     </>
   )

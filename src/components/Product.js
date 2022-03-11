@@ -3,7 +3,7 @@ import { Button, Card, Col } from 'react-bootstrap'
 
 const Product = () => {
   return (
-    <Col lg md="4">
+    <Col lg="3" md="4" className='my-3'>
       <Card>
         <Card.Img variant="top" src="holder.js/100px180" />
         <Card.Body>

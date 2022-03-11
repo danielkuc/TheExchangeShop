@@ -11,7 +11,7 @@ const Profile = () => {
       <Container className='text-center'>
         <p>{nickname}</p>
         <p>{email}</p>
-        {JSON.stringify(user, null, 2)}
+        {/* {JSON.stringify(user, null, 2)} */}
       </Container>
     </div>
   );
