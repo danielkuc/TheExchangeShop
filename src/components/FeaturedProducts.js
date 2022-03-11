@@ -5,7 +5,7 @@ import Product from './Product'
 const FeaturedProducts = () => {
   return (
     <>
-      <p className='h2 my-5'>Featured Products</p>
+      <p className='h2 pb-4'>Featured Products</p>
       <Row>
         <Product/>
         <Product/>

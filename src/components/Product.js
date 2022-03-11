@@ -3,8 +3,8 @@ import { Button, Card, Col } from 'react-bootstrap'
 
 const Product = () => {
   return (
-    <Col lg md="4" className='my-2'>
-      <Card onClick={() => console.log("works")}>
+    <Col lg md="4">
+      <Card>
         <Card.Img variant="top" src="holder.js/100px180" />
         <Card.Body>
           <Card.Title>Card Title</Card.Title>

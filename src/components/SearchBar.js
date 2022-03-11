@@ -6,7 +6,7 @@ const SearchBar = () => {
   const [inputText, setInputText] = useState("");
 
   return (
-    <div className='my-5'>
+    <div className=''>
       <Col md={6} className="m-auto">
         <Form onSubmit={(e) =>{
           e.preventDefault()
