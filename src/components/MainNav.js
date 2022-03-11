@@ -1,7 +1,6 @@
 import { NavLink} from "react-router-dom";
 import React from "react";
 import ProtectedLink from "../auth/protected-link";
-import { useAuth0 } from "@auth0/auth0-react";
 
 const MainNav = () => (
   <div className="navbar-nav mr-auto">
