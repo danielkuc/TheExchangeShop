@@ -1,5 +1,5 @@
 import './App.css';
-import { Cart, Home, NavBar, Profile, ProductsList } from './components';
+import { Cart,Default, Home, NavBar, Profile, ProductsList } from './components';
 import { Routes, Route } from 'react-router-dom';
 import ProtectedRoute from './auth/protected-route';
 
@@ -12,6 +12,7 @@ function App() {
           <Route path='cart' element={<Cart />} />
           <Route path='products' element={<ProductsList />} />
           <Route path="profile" element={<ProtectedRoute component={Profile} />} />
+          <Route path='/*' element={<Default />} />
         </Routes>
     </div>
   );
