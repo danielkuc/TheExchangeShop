@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Default = (props) => {
+const Default = () => {
   return (
     <div className="container">
       <div className="row">
@@ -10,7 +10,7 @@ const Default = (props) => {
           </p>
           <p className="h1">Error</p>
           <p className="h2">Page not found</p>
-          <p className="h3">URL <span className="text-danger">{props.location.pathname}</span> not found</p>
+          <p className="h3">URL <span className="text-danger">{window.location.href}</span> not found</p>
         </div>
       </div>
     </div>
