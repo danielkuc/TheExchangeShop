@@ -1,20 +1,8 @@
-import React, { useEffect } from 'react';
-import axios from 'axios';
-import FeaturedProducts from './FeaturedProducts';
 import { Container } from 'react-bootstrap';
+import FeaturedProducts from './FeaturedProducts';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-
-  const makeGetRequest = async () => {
-    let response = await axios.get("https://theexchangeapi.azurewebsites.net/test");
-    console.log(response.status);
-  }
-
-  useEffect(() => {
-    makeGetRequest();
-  },[]);
-
   return (
     <div className='w-100 vh-90'>
     <Container className='text-center'>

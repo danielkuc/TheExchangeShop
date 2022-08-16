@@ -2,9 +2,9 @@ import React from 'react'
 import { Container, Row } from 'react-bootstrap'
 import Product from './Product';
 
-const ProductsList = () => {
+const ProductsList = ({products}) => {
   const numberOfProducts = [...Array(24).keys()];
-
+  console.log(products)
   return (
     <div>
       <Container>
