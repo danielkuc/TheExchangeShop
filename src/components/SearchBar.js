@@ -1,25 +1,33 @@
 import React, { useState } from 'react'
-import { Col,Form } from 'react-bootstrap'
+import { Button, Container, Col, Form, Row, InputGroup} from 'react-bootstrap'
 
 const SearchBar = () => {
 
-  const [inputText, setInputText] = useState("");
+  const [query, setQuery] = useState("");
 
   return (
-    <div className=''>
-      <Col md={6} className="m-auto">
-        <Form onSubmit={(e) =>{
-          e.preventDefault()
-        }}>
-        <Form.Control 
-          type='text'
-          placeholder='Search'
-          value={inputText}
-          onChange={(e) => setInputText(e.target.value)}
+    <Container fluid="sm" className="mt-3">
+      <Row>
+        <Col xs={5} className="mx-auto" >
+        <InputGroup className="mb-3">
+        <Button variant="warning" id="button-addon1">
+          Search
+        </Button>
+     {/* <Form onSubmit={(e) =>{
+           e.preventDefault()
+         }}> */}
+        <Form.Control
+          aria-label="Example text with button addon"
+          aria-describedby="basic-addon1"
+          type="text"
+          placeholder="Search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
         />
-        </Form>
-      </Col>
-    </div>
+      </InputGroup>
+        </Col>
+      </Row>
+    </Container>
   )
 }
 
