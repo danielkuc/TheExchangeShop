@@ -1,13 +1,14 @@
 import React from 'react'
-import { Container, Row } from 'react-bootstrap'
+import { Button, Container, Row } from 'react-bootstrap'
 import Product from './Product';
 import SearchBar from './SearchBar';
 
-const ProductsList = ({products}) => {
+const ProductsList = ({products, setProducts}) => {
   const numberOfProducts = [...Array(24).keys()];
   return (
     <div>
-      <SearchBar  />
+      <SearchBar products={products} setProducts={setProducts}/>
+      <Button onClick={() => console.log(products)}/>
       <Container>
         <Row>
           {numberOfProducts.map(num => {

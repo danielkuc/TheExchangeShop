@@ -1,30 +1,33 @@
 import React, { useState } from 'react'
+import axios from 'axios';
 import { Button, Container, Col, Form, Row, InputGroup} from 'react-bootstrap'
 
-const SearchBar = () => {
+const SearchBar = ({setProducts}) => {
 
-  const [query, setQuery] = useState("");
+  const [productName, setProductName] = useState("");
+
+  const submitQuery = async () =>{
+    return axios.get("https://theexchangeapi.azurewebsites.net/shop/products.list?name=" + productName + "&pricefrom=")
+    .then(response => {
+      setProducts(response.data.productList);
+    })
+  }
 
   return (
     <Container fluid="sm" className="mt-3">
       <Row>
         <Col xs={5} className="mx-auto" >
-        <InputGroup className="mb-3">
-        <Button variant="warning" id="button-addon1">
-          Search
-        </Button>
-     {/* <Form onSubmit={(e) =>{
-           e.preventDefault()
-         }}> */}
-        <Form.Control
-          aria-label="Example text with button addon"
-          aria-describedby="basic-addon1"
-          type="text"
-          placeholder="Search"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-        />
-      </InputGroup>
+          <InputGroup className="mb-3" >
+            <Form.Control
+              type="text"
+              placeholder="Search"
+              value={productName}
+              onChange={(e) => setProductName(e.target.value)}
+            />
+            <Button variant="warning" type="submit" onClick={submitQuery}>
+              Search
+            </Button>
+          </InputGroup>
         </Col>
       </Row>
     </Container>
