@@ -8,8 +8,8 @@ const ProductsList = ({products, setProducts}) => {
   return (
     <div>
       <SearchBar products={products} setProducts={setProducts}/>
-      <Button onClick={() => console.log(products)}/>
       <Container>
+      <Button onClick={() => console.log(products)}/>
         <Row>
           {numberOfProducts.map(num => {
             return <Product key={num} />
