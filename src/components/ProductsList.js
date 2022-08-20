@@ -4,15 +4,15 @@ import Product from './Product';
 import SearchBar from './SearchBar';
 
 const ProductsList = ({products, setProducts}) => {
-  const numberOfProducts = [...Array(24).keys()];
+
   return (
     <div>
       <SearchBar products={products} setProducts={setProducts}/>
       <Container>
       <Button onClick={() => console.log(products)}/>
         <Row>
-          {numberOfProducts.map(num => {
-            return <Product key={num} />
+          {products.map(product => {
+            return <Product productName={product.name} productDescription={product.description} price={product.price} key={product.id} />
           })}
         </Row>
       </Container>

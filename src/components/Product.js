@@ -8,6 +8,7 @@ const Product = ({productName, productDescription, price}) => {
         <Card.Img variant="top" src="holder.js/100px180" />
         <Card.Body>
           <Card.Title>{productName}</Card.Title>
+          <Card.Text>{price}</Card.Text>
           <Card.Text>
             {productDescription}
           </Card.Text>
