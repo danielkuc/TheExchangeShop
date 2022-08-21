@@ -14,14 +14,6 @@
   text-decoration: none;
 }
 
-.productCard {
-  height: 28rem;
-}
-
-.card-footer{
-  background:transparent;
-  border-top: transparent;
-}
 
 .shop-now:hover {
   text-decoration: none;

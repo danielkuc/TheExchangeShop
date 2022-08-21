@@ -7,6 +7,8 @@ import ProtectedRoute from './auth/protected-route';
 
 function App() { 
   const [productsList, setProductsList] = useState([]);
+  const [productDetails, setProductDetails] = useState({});
+  // const [isLoading, setLoading] = useState(false);
  
   return (
     <React.Fragment>
@@ -14,7 +16,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}  />
           <Route path='cart' element={<Cart />} />
-          <Route path='products' element={<ProductsList products={productsList} setProducts={setProductsList} />} />
+          <Route path='products' element={<ProductsList productDetails={productDetails} setDetails={setProductDetails} products={productsList} setProducts={setProductsList} />} />
           <Route path="profile" element={<ProtectedRoute component={Profile} />} />
           <Route path='/*' element={<Default />} />
         </Routes>

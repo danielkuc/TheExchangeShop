@@ -12,7 +12,7 @@ const ProductsList = ({products, setProducts}) => {
       <Button onClick={() => console.log(products)}/>
         <Row>
           {products.map(product => {
-            return <Product productName={product.name} productDescription={product.description} price={product.price} key={product.id} />
+            return <Product product={product} key={product.id}/>
           })}
         </Row>
       </Container>
