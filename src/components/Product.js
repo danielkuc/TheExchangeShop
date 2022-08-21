@@ -11,9 +11,9 @@ const Product = (props) => {
           {/* <img src={image_link} alt="product" className='card-img-top'/> */}
       </div>
       <div className="card-footer text-center ">
-        <p>{props.product.name}</p>
+        <p>{props.name}</p>
         <p className="h5 text-dark font-italic">
-          £{props.product.price}
+          £{props.price}
         </p>
       </div>
       <div className='mb-2'>
