@@ -1,25 +1,26 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 
 const Product = (props) => {
   return (
     <ProductWrapper className='col-9 mx-auto col-md-5 col-lg-3 my-3'>
-    <div className="card animate-bottom">
+    <Link to="/features" className="card animate-bottom" onClick={() => props.setProductDetails(props.passedProduct)}>
       <div className="img-container p-4">
           {/* <img src={image_link} alt="product" className='card-img-top'/> */}
       </div>
       <div className="card-footer text-center ">
-        <p>{props.name}</p>
+        <p>{props.passedProduct.name}</p>
         <p className="h5 text-dark font-italic">
-          £{props.price}
+          £{props.passedProduct.price}
         </p>
       </div>
       <div className='mb-2'>
         <Button>Add to cart</Button>
       </div>
-    </div>
+    </Link>
   </ProductWrapper>
 
   )

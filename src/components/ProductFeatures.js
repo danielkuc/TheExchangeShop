@@ -29,7 +29,7 @@ const ProductFeatures = (props) => {
           <div>
             <Link to='/products'>
               <Button className="d-flex">
-              {/* <i class="fas fa-backspace fa-2x"/> <span className="mt-1 ml-3">Back to products</span>  */}
+                Back to Products
               </Button>
             </Link>
           </div>

@@ -1,18 +1,17 @@
 import React from 'react'
-import { Button, Container, Row } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 import Product from './Product';
 import SearchBar from './SearchBar';
 
-const ProductsList = ({products, setProducts}) => {
+const ProductsList = ({products, setDetails, setProducts}) => {
 
   return (
     <div>
       <SearchBar products={products} setProducts={setProducts}/>
       <Container>
-      <Button onClick={() => console.log(products)}/>
         <Row>
           {products.map(product => {
-            return <Product name={product.name} price={product.price} key={product.id}/>
+            return <Product passedProduct={product} key={product.id}  setProductDetails={setDetails}/>
           })}
         </Row>
       </Container>
