@@ -3,7 +3,7 @@ import { Row } from 'react-bootstrap'
 import Product from './Product'
 
 const FeaturedProducts = () => {
-  const [featuredProjects, setFeaturedProjects] = useState({});
+  const [featuredProjects, setFeaturedProjects] = useState([]);
 
   const getData = async () => {
     const res = await fetch('data.json');
