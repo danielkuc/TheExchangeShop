@@ -6,16 +6,24 @@
   min-height: 92.1vh;
 }
 
+.home {
+  background-color: #dbfc0340;
+}
+
 .shop-now {
   border-style: solid;
   border-color: black;
   color:black;
+  background-color: #03e3fc60;
   border-width: medium;
   text-decoration: none;
 }
 
-
 .shop-now:hover {
   text-decoration: none;
   color: black;
+}
+
+.product-list {
+  background-color: #20fc0360;
 }

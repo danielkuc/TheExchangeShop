@@ -6,7 +6,7 @@ import SearchBar from './SearchBar';
 const ProductsList = ({products, setDetails, setProducts}) => {
 
   return (
-    <div>
+    <div className='product-list vh-90'>
       <SearchBar products={products} setProducts={setProducts}/>
       <Container>
         <Row>

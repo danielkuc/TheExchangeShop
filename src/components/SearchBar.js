@@ -18,7 +18,7 @@ const SearchBar = ({setProducts}) => {
   }
 
   return (
-    <Container className="mt-4">
+    <Container className="pt-4">
       <Row>
         <Col sm={6} className="mx-auto">
       <Form>
