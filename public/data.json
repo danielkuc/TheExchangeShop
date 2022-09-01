@@ -2,27 +2,33 @@
   "results" : [
   {
     "id": 1,
-    "name": "product1",
-    "desription": "Some product1",
-    "price": 10.99
+    "name": "Marker Pen",
+    "desription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "price": 10.99,
+    "image" : "imgs/stock1.jpg"
   },
   {
     "id": 2,
-    "name": "product2",
-    "desription": "Some product2",
-    "price": 5.99
+    "name": "Crafted soap",
+    "desription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "price": 5.99,
+    "image" : "imgs/stock2.jpg"
   },
   {
     "id": 3,
-    "name": "product3",
-    "desription": "Some product3",
-    "price": 12.99
+    "name": "Handmade cosmetics",
+    "desription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "price": 12.99,
+    "image" : "imgs/stock3.jpg"
+
   },
   {
     "id": 4,
-    "name": "product4",
-    "desription": "Some product4",
-    "price": 7.99
+    "name": "Vintage Camera",
+    "desription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "price": 7.99,
+    "image" : "imgs/stock4.jpg"
+
   }
 ]
 }

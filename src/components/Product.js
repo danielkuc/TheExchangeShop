@@ -9,7 +9,7 @@ const Product = (props) => {
     <ProductWrapper className='col-9 mx-auto col-md-5 col-lg-3 my-3'>
     <Link to="/features" className="card animate-bottom" onClick={() => props.setProductDetails(props.passedProduct)}>
       <div className="img-container p-4">
-          {/* <img src={image_link} alt="product" className='card-img-top'/> */}
+          <img src={props.passedProduct.image} alt="product" className='card-img-top'/>
       </div>
       <div className="card-footer text-center ">
         <p>{props.passedProduct.name}</p>
